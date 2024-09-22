@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "uLq7b8O1mNeVG7zfGmJV1tSHCqYG0ouvTIyAGVz/syk=",
+  "Source": "a1-http-request",
+  "BasePath": "_content/a1-http-request",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
