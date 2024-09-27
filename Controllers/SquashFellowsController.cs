@@ -14,7 +14,15 @@ namespace a1_http_request.Controllers
     /// <param name="large">Number of large plushies</param>
     /// <returns>Checkout summary with total cost</returns>
     /// <example>
-    /// POST: localhost:5169/api/SquashFellows/squashfellows
+    /// POST localhost/api/SquashFellows/squashfellows
+    /// Content-Type:application/x-www-form-urlencoded
+    /// REQUEST BODY: Small=1&Large=1 -> 1 Small @ $25.50 = $25.50; 1 Large @ $45.50 = $45.50; Subtotal = $71.00; Tax = $9.23 HST; Total = $80.23
+    /// POST localhost/api/SquashFellows/squashfellows
+    /// Content-Type:application/x-www-form-urlencoded
+    /// REQUEST BODY: Small=2&Large=1 -> 2 Small @ $25.50 = $51.00; 1 Large @ $45.50 = $45.50; Subtotal = $96.50; Tax = $12.54 HST; Total = $109.04
+    /// POST localhost/api/SquashFellows/squashfellows
+    /// Content-Type:application/x-www-form-urlencoded
+    /// REQUEST BODY: Small=100&Large=100 -> 100 Small @ $25.50 = $2550.00; 100 Large @ $45.50 = $4550.00; Subtotal = $7100.00; Tax = $923.00 HST; Total = $8023.00 
     /// </example>
 
     [HttpPost(template:"squashfellows")]
